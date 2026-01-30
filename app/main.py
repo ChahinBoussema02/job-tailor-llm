@@ -7,7 +7,7 @@ from fastapi import FastAPI, HTTPException
 from app.core.schemas import TailorRequest, TailorResponse, KeywordsOut
 from app.core.prompts import SYSTEM_PROMPT, build_user_prompt
 from app.core.llm import call_ollama_chat
-from app.core .scoring import keyword_match
+from app.core.scoring import keyword_match
 
 app = FastAPI(title = "Job Tailor LLM")
 
